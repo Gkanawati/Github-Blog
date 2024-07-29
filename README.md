@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+![github-blog-gk-Capa](https://github.com/user-attachments/assets/cf3d4b52-4fef-45f2-acb7-bb7eb20c8345)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center" style='margin-top: 20px;'>
+  <img width='120px' src="https://github.com/user-attachments/assets/cdfd1d6b-cfe6-4a31-b55f-8b1e9a32d129" />
+</p>
 
-Currently, two official plugins are available:
+## 🚀 Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A ideia deste projeto é criar um blog pessoal que realiza requisições HTTP para consumir a API do GitHub. Os posts são carregados diretamente do repositório do projeto, especificamente da aba de Issues. Sempre que uma nova issue é cadastrada, ela é exibida junto com as demais no blog. Sinta-se à vontade para criar uma nova issue! Isso ajuda a manter o projeto dinâmico e interativo.
 
-## Expanding the ESLint configuration
+O blog também exibe informações do perfil do GitHub, como imagem, número de seguidores, nome e outras informações disponíveis na API. É possível buscar postagens específicas através de um campo de busca na página. A página inicial apresenta um breve resumo dos posts, e ao clicar em um dos cards, o usuário é redirecionado para uma página onde pode visualizar o post completo.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 💡 Bibliotecas Utilizadas:
 
-- Configure the top-level `parserOptions` property like this:
+- `styled-components`
+- `react-hook-form`
+- `react-router-dom`
+- `axios`
+- `dayjs`
+- `react-markdown`
+- `use-context-selector`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## ⚙️ Como rodar o Projeto Localmente:
+
+-Para instalar todas as bibliotecas usadas no projeto rode o comando:
+
+```
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+-Para rodar o app:
+
+```
+npm run dev
+```
+
+## 🔗 Link do Projeto:
+
+https://github-blog-gk.netlify.app
